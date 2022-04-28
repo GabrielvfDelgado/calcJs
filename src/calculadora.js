@@ -1,18 +1,26 @@
+class Calculadora {
 
-const sum = (a, b) => {
-  return a + b;
-};
+  constructor(a, b) {
+    this.a = a;
+    this.b = b;
+  }
 
-const sub = (a, b) => {
-  return a - b;
-};
+  sum() {
+    return this.a + this.b;
+  }
 
-const mult = (a, b) => {
-  return a * b;
-};
+  sub() {
+    return this.a - this.b;
+  }
 
-const div = (a, b) => {
-  return a / b;
-};
+  mult() {
+    return this.a * this.b;
+  }
 
-module.exports = { sum, sub, mult, div };
+  div() {
+    return this.a / this.b;
+  }
+
+}
+
+module.exports = { Calculadora };
